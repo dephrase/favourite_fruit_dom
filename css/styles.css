@@ -1,5 +1,12 @@
 #fruit-list{
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subListItem{
+    list-style: none;
 }
 
 .title-headers{
