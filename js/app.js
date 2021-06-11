@@ -76,6 +76,8 @@ function getNumberOfFruits(fruitList){
     let numOfFruits;
     if(fruitList.children.length == 1){
         numOfFruits = "You like 1 fruit so far"
+    } else if(fruitList.children.length == 15){
+        numOfFruits = "15 KINDS OF FRUIT"
     } else {
         numOfFruits = `You like ${fruitList.children.length} fruits so far`
     }
