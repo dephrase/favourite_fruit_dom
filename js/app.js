@@ -79,7 +79,7 @@ function getNumberOfFruits(fruitList){
 }
 
 function deleteFruit(){
-    console.log('Delete button Clicked')
+    //Clicking on this button resets the DOM, so acts as a delete button
 }
 
 
