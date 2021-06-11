@@ -13,10 +13,9 @@ function addNewFruit(event){
     newListName.textContent = event.target.name.value;
     newListName.className = "subListName"
     const newListColour = document.createElement('li')
-    newListColour.textContent = `Colour: ${event.target.colour.value}`;
     newListColour.className = "subListColour"
     const newListFavourite = document.createElement('li')
-    newListFavourite.textContent = `Favourite? ${event.target.favourite.value}`;
+    newListFavourite.textContent = getFavouriteText(event.target.favourite.value)
     newListFavourite.className = "subListFavourite"
 
     newListItem.classList.add(getColour(event.target.colour.value))
@@ -53,6 +52,18 @@ function getColour(colour){
         backgroundColour = "white"
     }
     return backgroundColour;
+}
+
+function getFavouriteText(favourite){
+    let favouriteText
+
+    if(favourite === "yes"){
+        favouriteText = "This is your favourite fruit!"
+    } else {
+        favouriteText = "Not quite a favourite"
+    }
+
+    return favouriteText
 }
 
 

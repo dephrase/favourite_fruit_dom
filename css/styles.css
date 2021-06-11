@@ -7,11 +7,15 @@
 
 .subListItem{
     list-style: none;
-    text-align: left;
+    text-align: center;
 }
 
 .subListName {
     font-size: 20px;
+    text-align: center;
+}
+
+.subListFavourite{
     text-align: center;
 }
 
@@ -54,7 +58,7 @@ li{
     background-color: rgb(177, 8, 177);
 }
 .pink{
-    background-color: pink;
+    background-color: rgb(248, 50, 232);
 }
 .orange{
     background-color: orange;
