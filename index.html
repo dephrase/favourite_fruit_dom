@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <title>Favourite Fruit</title>
+</head>
+<body>
+    <div class="title-headers">
+        <h1>Favourite Fruit</h1>
+        <h3>How many kinds of fruit do you like?</h3>
+    </div>
+    <div class="form-div">
+        <form id="new-fruit-form">
+            <div class="form-item">
+                <label for="fruit-name">Fruit Name</label>
+                <input type="text" id="fruit-name" required>
+            </div>
+            <div class="form-item">
+                <label for="fruit-colour">Fruit Colour</label>
+                <select name="fruit-colour" id="fruit-colour">
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <p>Is this your favourite fruit?</p>
+                <input type="radio" id="yes" name="favourite" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="favourite" value="no">
+                <label for="no">No</label>
+            </div>
+            <input type="submit" id="save">
+        </form>
+    </div>
+    <ul id="fruit-list">
+
+    </ul>
+</body>
+</html>
