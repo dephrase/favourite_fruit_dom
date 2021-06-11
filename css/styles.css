@@ -37,3 +37,28 @@ li{
     padding: 5px;
     border-style: solid;
 }
+
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: rgb(84, 231, 84);
+}
+.red{
+    background-color: rgb(248, 39, 39);
+}
+.blue{
+    background-color: rgb(32, 99, 243);
+} 
+.purple{
+    background-color: rgb(177, 8, 177);
+}
+.pink{
+    background-color: pink;
+}
+.orange{
+    background-color: orange;
+}
+.brown{
+    background-color: rgb(190, 49, 49);
+}

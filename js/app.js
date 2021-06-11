@@ -19,6 +19,8 @@ function addNewFruit(event){
     newListFavourite.textContent = `Favourite? ${event.target.favourite.value}`;
     newListFavourite.className = "subListFavourite"
 
+    newListItem.classList.add(getColour(event.target.colour.value))
+
     newListItem.append(newListName)
     newListItem.append(newListColour)
     newListItem.append(newListFavourite)
@@ -27,5 +29,31 @@ function addNewFruit(event){
 
     event.target.reset();
 }
+
+function getColour(colour){
+    let backgroundColour
+
+    if(colour === "red"){
+        backgroundColour = "red"
+    } else if(colour === "yellow"){
+        backgroundColour = "yellow"
+    } else if(colour === "blue"){
+        backgroundColour = "blue"
+    } else if(colour === "green"){
+        backgroundColour = "green"
+    } else if(colour === "orange"){
+        backgroundColour = "orange"
+    } else if(colour === "purple"){
+        backgroundColour = "purple"
+    } else if(colour === "pink"){
+        backgroundColour = "pink"
+    } else if(colour == "brown"){
+        backgroundColour = "brown"
+    } else {
+        backgroundColour = "white"
+    }
+    return backgroundColour;
+}
+
 
 
