@@ -8,15 +8,16 @@ function addNewFruit(event){
     event.preventDefault();
 
     const newListItem = document.createElement('ul')
+    newListItem.className = "newListItem"
     const newListName = document.createElement('li')
     newListName.textContent = event.target.name.value;
-    newListName.className = "subListItem"
+    newListName.className = "subListName"
     const newListColour = document.createElement('li')
-    newListColour.textContent = event.target.colour.value;
-    newListColour.className = "subListItem"
+    newListColour.textContent = `Colour: ${event.target.colour.value}`;
+    newListColour.className = "subListColour"
     const newListFavourite = document.createElement('li')
-    newListFavourite.textContent = event.target.favourite.value;
-    newListFavourite.className = "subListItem"
+    newListFavourite.textContent = `Favourite? ${event.target.favourite.value}`;
+    newListFavourite.className = "subListFavourite"
 
     newListItem.append(newListName)
     newListItem.append(newListColour)

@@ -7,8 +7,33 @@
 
 .subListItem{
     list-style: none;
+    text-align: left;
+}
+
+.subListName {
+    font-size: 20px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
 }
 
 .title-headers{
     text-align: center;
+}
+
+.newListItem{
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.form-div{
+    width: 250px;
+    padding: 5px;
+    border-style: solid;
 }
