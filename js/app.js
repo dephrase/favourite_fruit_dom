@@ -20,15 +20,19 @@ function addNewFruit(event){
 
     newListItem.classList.add(getColour(event.target.colour.value))
 
-    newListItem.append(newListName)
-    newListItem.append(newListColour)
-    newListItem.append(newListFavourite)
+    appendItems(newListItem, newListName, newListColour, newListFavourite)
 
     document.querySelector('#fruit-list').append(newListItem);
     const fruitList = document.querySelector('#fruit-list')
     document.querySelector('#numberOfFruits').textContent = getNumberOfFruits(fruitList);
 
     event.target.reset();
+}
+
+function appendItems(list, name, colour, favourite){
+    list.append(name)
+    list.append(colour)
+    list.append(favourite)
 }
 
 function getColour(colour){
