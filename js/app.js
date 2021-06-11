@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-    const fruitList = document.querySelector('#fruit-list')
     document.querySelector('#new-fruit-form').addEventListener('submit', addNewFruit)
+    document.querySelector('#fruitsSection').addEventListener('submit', deleteFruit)
 
 })
-
+    
 function addNewFruit(event){
     event.preventDefault();
 
@@ -76,6 +76,10 @@ function getNumberOfFruits(fruitList){
         numOfFruits = `You like ${fruitList.children.length} fruits so far`
     }
     return numOfFruits;
+}
+
+function deleteFruit(){
+    console.log('Delete button Clicked')
 }
 
 
