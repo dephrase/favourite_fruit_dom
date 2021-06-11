@@ -24,7 +24,9 @@ function addNewFruit(event){
     newListItem.append(newListColour)
     newListItem.append(newListFavourite)
 
-    document.querySelector('#fruit-list').append(newListItem)
+    document.querySelector('#fruit-list').append(newListItem);
+    const fruitList = document.querySelector('#fruit-list')
+    document.querySelector('#numberOfFruits').textContent = getNumberOfFruits(fruitList);
 
     event.target.reset();
 }
@@ -64,6 +66,16 @@ function getFavouriteText(favourite){
     }
 
     return favouriteText
+}
+
+function getNumberOfFruits(fruitList){
+    let numOfFruits;
+    if(fruitList.children.length == 1){
+        numOfFruits = "You like 1 fruit so far"
+    } else {
+        numOfFruits = `You like ${fruitList.children.length} fruits so far`
+    }
+    return numOfFruits;
 }
 
 
